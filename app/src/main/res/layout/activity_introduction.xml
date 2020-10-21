@@ -29,8 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
-            app:srcCompat="@drawable/aiki_now_logo_small"
-            android:contentDescription="TODO" />
+            app:srcCompat="@drawable/ic_launcher_foreground" />
 
         <TextView
             android:layout_width="wrap_content"
