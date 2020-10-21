@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IntroductionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/aiki_now_logo_small"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Catch12"
+            android:textStyle="bold"
+            android:textColor="#353434"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/with"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="35dp"
+            android:text="All quizzes that are features here are the top demands!"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Nick name"
+            android:textColorHint="@color/colorYellow"
+            app:boxCornerRadiusBottomEnd="56dp"
+            app:boxCornerRadiusBottomStart="56dp"
+            app:boxCornerRadiusTopEnd="56dp"
+            app:boxCornerRadiusTopStart="56dp"
+            app:boxStrokeColor="@color/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_number_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:ems="11" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+     <Button
+         android:id="@+id/get_started_button"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:background="@drawable/button_border"
+         android:text="Get Started"
+         android:textAllCaps="false"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
